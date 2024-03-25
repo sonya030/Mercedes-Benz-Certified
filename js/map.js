@@ -100,7 +100,7 @@ function fadeIn(element, duration) {
 }
 
 // 3. gotop 버튼
-/*https://velog.io/@shinju4n/JS-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EA%B8%B0%EB%8A%A5-%EA%B0%9C%EB%B0%9C*/
+
 goToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
@@ -114,7 +114,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// var bDisplay = document.querySelector('.impo_name>h3');
+
 function hello() {
   const img = document.querySelector(".impo_img>.img1");
   if (img.style.display === "block") {
