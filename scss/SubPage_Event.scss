@@ -1,0 +1,147 @@
+@import "reset", "font", "variable";
+* {
+  font-family: "Gothic A1";
+}
+
+.SubPage_Event_main {
+  position: relative;
+  width: 100%;
+  background-image: url(../img/subpage_event/event_mainvisual.png);
+  background-position: 0 -70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .SubPage_Event_main_text {
+    padding: 250px;
+    color: $dark-black;
+    h6 {
+      font-size: $strong;
+      margin-bottom: 6px;
+      color: $dim-darkgray;
+      font-family: $logo-font;
+    }
+    h2 {
+      font-size: 3rem;
+      font-weight: $bold;
+      font-family: $logo-font;
+    }
+    p {
+      font-weight: $regular;
+      color: $dim-darkgray;
+      margin-top: 20px;
+      font-size: $p;
+      line-height: 35px;
+    }
+  }
+}
+.SubPage_Event_main_in {
+  width: 1400px;
+  margin: auto;
+  h3 {
+    font-size: $logo-h3;
+  }
+  .SubPage_Event_wrap {
+    h3 {
+      font-weight: bold;
+      padding: 3rem 0;
+      font-size: $h5;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 143px;
+        border: 1px solid #000;
+        margin-bottom: 1rem;
+      }
+    }
+    .SubPage_Event_items {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      .text_box {
+        line-height: 30px;
+        margin: 20px 0;
+        width: 440px;
+        h5 {
+          color: $turquoise;
+          font-weight: $bold;
+        }
+        h4 {
+          font-size: 1.2rem;
+          font-weight: $bold;
+        }
+        h6 {
+          margin-top: 1rem;
+          font-size: $h6;
+          color: $dim-darkgray;
+        }
+      }
+    }
+    .see_more {
+      margin-top: 50px;
+      position: absolute;
+      left: 50%;
+    }
+  }
+}
+.recent_car {
+  width: 100%;
+  height: 600px;
+  margin-top: 180px;
+  display: flex;
+  .recent_car_leftbox {
+    width: 900px;
+    height: 470px;
+    background-color: $dark-green;
+    border-radius: 0 160px 0 0;
+    .recent_car_left_text {
+      margin: 85px 150px;
+      color: $light-gray;
+      h2 {
+        font-size: $h4;
+        font-weight: $bold;
+      }
+      h3 {
+        margin-top: 28px;
+        font-size: $h4;
+        font-family: $logo-font;
+      }
+      h4 {
+        margin-top: 20px;
+        text-align: center;
+        width: 140px;
+        padding: 0.5rem;
+        border-radius: 50rcap;
+        border: 2px solid $pale-gray;
+        color: $turquoise;
+        font-size: $small;
+      }
+      p {
+        margin-top: 40px;
+        line-height: 25px;
+      }
+      button {
+        margin-top: 20px;
+        font-size: $h6;
+        font-weight: $bold;
+        padding: 0.5rem 1.8rem;
+        background-color: $white;
+        border: none;
+      }
+    }
+  }
+  .recent_car_rightbox {
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    width: 1300px;
+    height: 470px;
+    margin-top: 90px;
+    margin-left: 600px;
+    #recent_car_img01 {
+      border-radius: 180px 0 0 0;
+    }
+  }
+}
+
+//반응형recent

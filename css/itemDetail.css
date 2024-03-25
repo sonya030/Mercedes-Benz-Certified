@@ -1,0 +1,368 @@
+@charset "UTF-8";
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/GothicA1/GothicA1.css");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+@import url("https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/*google WEB FONT Gothic A1*/
+/*google WEB FONT Inria Serif*/
+/* 폰트어썸 아이콘cdn */
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*/
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/* Setting Variables : Object Color */
+/* Setting Variables : Text Color */
+.itemDetail {
+  width: 100%;
+}
+.itemDetail .itemDetail_in {
+  width: inherit;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap {
+  width: 90%;
+  margin: auto;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .itemGlance {
+  width: 100%;
+  padding-top: 6rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .itemGlance .detailSwiper2 {
+  width: 75%;
+  margin: 0;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .itemGlance .detailSwiper2 .swiper-wrapper {
+  width: inherit;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .itemGlance .detailSwiper2 .swiper-wrapper .swiper-slide {
+  width: inherit;
+  cursor: pointer;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .itemGlance .detailSwiper2 .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: fit-content;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .itemGlance .detailSwiper {
+  width: 23%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .itemGlance .detailSwiper .swiper-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .itemGlance .detailSwiper .swiper-wrapper .swiper-slide {
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .itemGlance .detailSwiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: fit-content;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .glance_notice {
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.itemDetail .itemDetail_in .itemGlance_wrap .glance_notice small {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+.itemDetail .itemDetail_in .item_basicInfo {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #cad6d8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_left {
+  margin-top: 3rem;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_left h3 {
+  font-size: 2.5rem;
+  font-family: "Inria Serif";
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_left .item_info {
+  padding-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_left .item_info img {
+  width: 25px;
+  height: 25px;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_left .item_info small {
+  font-size: 0.78rem;
+  color: #9f9f9f;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_left .item_info .date_of_birth,
+.itemDetail .itemDetail_in .item_basicInfo .info_left .item_info .mile_age,
+.itemDetail .itemDetail_in .item_basicInfo .info_left .item_info .fuel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_left .item_info .date_of_birth,
+.itemDetail .itemDetail_in .item_basicInfo .info_left .item_info .mile_age {
+  padding-right: 0.5rem;
+  border-right: 1px solid #8fa7bd;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 2rem;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_right .price_area {
+  text-align: right;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_right .price_area p {
+  font-size: 1rem;
+  color: #8c8c8c;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_right .price_area h4 {
+  padding: 0.5rem 0;
+  font-size: 1.95rem;
+  font-weight: 700;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_right .price_area strong {
+  font-size: 1.1rem;
+  color: #525252;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_right .purchase {
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  border-radius: 110px;
+  border: none;
+  background: #8fa7bd;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.2s;
+}
+.itemDetail .itemDetail_in .item_basicInfo .info_right .purchase:hover {
+  background: #597a99;
+}
+.itemDetail .itemDetail_in .item_detailInfo {
+  width: 80%;
+  margin: 5rem auto;
+}
+.itemDetail .itemDetail_in .item_detailInfo .detail_title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.itemDetail .itemDetail_in .item_detailInfo .detail_title img {
+  width: 25px;
+}
+.itemDetail .itemDetail_in .item_detailInfo .detail_title h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+}
+.itemDetail .itemDetail_in .item_detailInfo .table_area {
+  width: 100%;
+  height: 800px;
+  margin-top: 1rem;
+  padding: 5%;
+  background: #eeeeee;
+}
+.itemDetail .itemDetail_in .item_detailInfo .table_area .table_wrap {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+.itemDetail .itemDetail_in .item_detailInfo .table_area .table_wrap .info_table {
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #8c8c8c;
+  border-bottom: 1px solid #8c8c8c;
+  border-collapse: collapse;
+}
+.itemDetail .itemDetail_in .item_detailInfo .table_area .table_wrap .info_table tr th,
+.itemDetail .itemDetail_in .item_detailInfo .table_area .table_wrap .info_table tr td {
+  padding-left: 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #c5d6e8;
+}
+.itemDetail .itemDetail_in .item_detailInfo .table_area .table_wrap .info_table tr th {
+  background: #e7f0f9;
+  text-align: left;
+  font-weight: 700;
+  color: #8fa7bd;
+}
+.itemDetail .itemDetail_in .item_detailInfo .table_area .table_wrap .info_table tr td {
+  color: #9f9f9f;
+}
+.itemDetail .itemDetail_in .item_detailInfo .table_area .table_wrap .info_table tr:last-child th,
+.itemDetail .itemDetail_in .item_detailInfo .table_area .table_wrap .info_table tr:last-child td {
+  border: none;
+}
+.itemDetail .itemDetail_in .sales_location {
+  width: 80%;
+  margin: auto;
+}
+.itemDetail .itemDetail_in .sales_location h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+}
+.itemDetail .itemDetail_in .sales_location .store_info {
+  width: 100%;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemDetail .itemDetail_in .sales_location .store_info img {
+  width: 60%;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc {
+  width: 35%;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .store_name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .store_location,
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .site_adress,
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .mail_adress,
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .phone_number {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .store_location img,
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .site_adress img,
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .mail_adress img,
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .phone_number img {
+  width: 20px;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .store_location h6,
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .site_adress h6,
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .mail_adress h6,
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .phone_number h6 {
+  font-size: 0.9rem;
+  color: #333;
+  word-break: break-all;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .seller_info {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #8fa7bd;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .seller_info .personImg {
+  width: 110px;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .seller_info .seller_desc .seller_name {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .seller_info .seller_desc .seller_name h6 {
+  padding-right: 0.5rem;
+  border-right: 1px solid #333;
+  font-size: 0.9rem;
+}
+.itemDetail .itemDetail_in .sales_location .store_info .store_desc .seller_info .seller_desc .seller_name p {
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.itemDetail .itemDetail_in .sales_location .btn_wrap {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.itemDetail .itemDetail_in .sales_location .btn_wrap button {
+  width: 33%;
+  padding: 1rem 0;
+  border: none;
+  background: #e1e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 700;
+  transition: 0.2s;
+}
+.itemDetail .itemDetail_in .sales_location .btn_wrap button img {
+  width: 25px;
+}
+.itemDetail .itemDetail_in .sales_location .btn_wrap button:hover {
+  background: #cad6d8;
+}
+.itemDetail .itemDetail_in .add_info {
+  width: 80%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.itemDetail .itemDetail_in .add_info small {
+  font-size: 0.78rem;
+  color: #9f9f9f;
+}

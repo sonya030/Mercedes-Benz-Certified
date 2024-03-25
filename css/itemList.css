@@ -1,0 +1,459 @@
+@charset "UTF-8";
+/* ===========reset=========== */
+@import url("https://webfontworld.github.io/GothicA1/GothicA1.css");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap");
+@import url("https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+ol, ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+/*google WEB FONT Gothic A1*/
+/*google WEB FONT Inria Serif*/
+/* 폰트어썸 아이콘cdn */
+/*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />*/
+/*Font Family*/
+/*Font Size*/
+/*Font Weight*/
+/* Setting Variables : Object Color */
+/* Setting Variables : Text Color */
+.itemList {
+  width: 100%;
+  background: #e1e1e1;
+}
+.itemList .itemList_in {
+  width: inherit;
+}
+.itemList .itemList_in .list_banner {
+  width: 100%;
+  height: 680px;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.38) 55%, rgba(0, 0, 0, 0) 100%), url(../img/subPage_itemList/itemListBanner.png);
+  background-size: cover;
+}
+.itemList .itemList_in .list_banner .banner_in {
+  width: 80%;
+  margin: auto;
+  padding-top: 12.8rem;
+}
+.itemList .itemList_in .list_banner .banner_in .banner_subTitle {
+  font-size: 1.4rem;
+  font-family: "Inria Serif";
+  color: #9f9f9f;
+}
+.itemList .itemList_in .list_banner .banner_in .banner_MainTitle {
+  font-size: 2.5rem;
+  font-family: "Inria Serif";
+  color: #fff;
+  margin-top: 1.5rem;
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information {
+  width: 9rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information .certified_title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information .certified_description {
+  display: none;
+  width: 380px;
+  height: 340px;
+  background: #000;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 15px #3d3d3d, inset 0 0 10px #575757;
+  padding: 1.5rem;
+  position: absolute;
+  top: 2.5rem;
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information .certified_description .description_title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information .certified_description .description_subText {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: -0.03rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #fff;
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information .certified_description .description_textWrap {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #9f9f9f;
+  letter-spacing: -0.05rem;
+  margin-top: 1rem;
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information .certified_description .description_textWrap .description_text img {
+  margin-right: 0.5rem;
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information:hover .certified_title {
+  border: 1px solid #16a2b5;
+  color: #16a2b5;
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information:hover .certified_description {
+  display: block;
+  animation: desc linear 0.4s;
+  z-index: 3;
+}
+@keyframes desc {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.itemList .itemList_in .list_banner .banner_in .certified_information::after {
+  content: url(../img/section_bestModel/touchCursor.svg);
+  width: 30px;
+  height: 35px;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  z-index: 2;
+  opacity: 0;
+  animation: clickCursor 5s 2;
+}
+@keyframes clickCursor {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  30% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in {
+  width: 80%;
+  margin: auto;
+  padding-top: 6.7rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .itemAmount {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .itemAmount span {
+  font-weight: 700;
+  color: #16a2b5;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList button {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  border: none;
+  background: #fff;
+  box-shadow: inset 0 0 10px #e0e0e0, inset 0 0 5px #c9c9c9, 2px 2px 5px #8c8c8c;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #8c8c8c;
+  transition: 0.3s;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList button:hover {
+  background: #525252;
+  box-shadow: inset 0 0 10px #292929, inset 0 0 5px #111111, 2px 2px 5px #8c8c8c;
+  color: #e1e1e1;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList button.popular-sort-btn {
+  position: relative;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList button.popular-sort-btn::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url(../img/subPage_itemList/click.png);
+  background-size: cover;
+  position: absolute;
+  top: 90%;
+  left: 60%;
+  animation: clickAni 2s linear infinite;
+}
+@keyframes clickAni {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList .selectBox {
+  padding: 0.3rem 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: inset 0 0 10px #e0e0e0, inset 0 0 5px #c9c9c9, 2px 2px 5px #8c8c8c;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList .selectBox .selectTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList .selectBox .selectTitle h6 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #8c8c8c;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList .selectBox .selectTitle img {
+  height: 15px;
+  padding-left: 0.5rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList .selectBox .select {
+  width: 90%;
+  margin: auto;
+  margin-top: 0.5rem;
+  padding: 0.2rem;
+  border: none;
+  border-radius: 5px;
+  background: #525252;
+  font-size: 0.78rem;
+  color: #fff;
+  cursor: pointer;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .list_sort .selectList .selectBox .select option {
+  font-size: 0.78rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap {
+  width: 100%;
+  margin-top: 2.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.8rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card {
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card:hover {
+  box-shadow: 0 0 10px #8c8c8c;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card:first-child {
+  position: relative;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card:first-child::after {
+  content: "";
+  width: 100px;
+  height: 45px;
+  background: url(../img/section_keyWord/clickInduction.png);
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 70%;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .imgBox {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  position: relative;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .imgBox img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .imgBox .sales_tag {
+  width: 85px;
+  height: 30px;
+  border-radius: 30px;
+  background: rgba(51, 51, 51, 0.5019607843);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1450980392), inset 0 0 10px #383838;
+  text-align: center;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .imgBox .sales_tag small {
+  line-height: 30px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #fff;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc {
+  width: inherit;
+  padding: 1.7rem 1.4rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_title {
+  font-size: 1.95rem;
+  font-family: "Inria Serif";
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_price {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-bottom: 1px solid #9f9f9f;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_price span {
+  font-size: 0.9rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_info {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_info img {
+  width: 25px;
+  height: 25px;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_info small {
+  font-size: 0.78rem;
+  color: #9f9f9f;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_info .date_of_birth,
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_info .mile_age,
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_info .fuel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_location {
+  height: 70px;
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_location img {
+  width: 25px;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_location .location_text {
+  color: #9f9f9f;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_location .location_text .store_name {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .item_location .location_text small {
+  font-size: 0.78rem;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .more_info {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  background: #cad6d8;
+  font-size: 0.9rem;
+  color: #045762;
+  text-align: center;
+  transition: 0.2s;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card .item_desc .more_info:hover {
+  background: #045762;
+  color: #fff;
+  font-weight: 700;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card.reserve .imgBox {
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+  position: relative;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card.reserve .imgBox::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5019607843);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card.reserve .imgBox .sales_tag {
+  width: 90px;
+  background: #000;
+  box-shadow: 0 2px 2px #292929, inset 0 0 10px #575757;
+  z-index: 5;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_wrap .item_card.reserve .imgBox .sales_tag small {
+  font-weight: 700;
+  color: #e1e1e1;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_notice {
+  padding: 2.9rem 0;
+}
+.itemList .itemList_in .itemList_wrap .list_wrap_in .item_notice small {
+  font-size: 0.78rem;
+  color: #9f9f9f;
+}
